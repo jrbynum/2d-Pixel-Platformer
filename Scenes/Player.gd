@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 @onready var screen_size = get_viewport_rect().size
-
-const SPEED = 300.0
-#const JUMP_VELOCITY = -600.0
+@onready var sprint_flag : bool = false
+@onready var crouch_flag : bool = false
+@export var SPEED : float = 300.0
 @export var air_jumps_total : int = 1
 var air_jumps_current : int = air_jumps_total
 @export var jump_height : float = 180
@@ -22,32 +22,40 @@ var air_jumps_current : int = air_jumps_total
 func _physics_process(delta):
 	#Animations
 	#check left and right velocity to see if we are running or not
+	#check to see if sprint is enabled
 	if(velocity.x > 1 || velocity.x < -1):
-			#sprite_2d.animation = "running" 
-			sprite_2d.play("running")
+			if sprint_flag :
+				sprite_2d.play("running")
+			else:
+				sprite_2d.play("walking")
 	else:
-		#sprite_2d.animation = "idle"
 		sprite_2d.play("idle")
 		
-	# Add the gravity.
+	# Check to see if we are on the floor if not add gravity.
 	if not is_on_floor():
 		velocity.y += get_gravity() * delta
 		if velocity.y > 0:
 			sprite_2d.play("falling")
-
+	#check for the sprint toggle
+	if Input.is_action_just_pressed("sprint"):
+		sprint_flag = !sprint_flag
+	#change speed based on the sprint flag	
+	if sprint_flag :
+		SPEED = 400
+	else:
+		SPEED = 200
 	# Handle Jump.
 	if Input.is_action_just_pressed("jump"): 
 		if is_on_floor():
 			jump();
-			#sprite_2d.animation = "jumping"
 			sprite_2d.play("jumping")
 		#velocity.y = jump_velocity
 		if air_jumps_current > 0 and not is_on_floor():
 			air_jump();
-			#sprite_2d.animation = "jumping"
 			sprite_2d.play("jumping")
-
 	# Get the input direction and handle the movement/deceleration.
+	# Input for the x axis(horizontal) 
+	# Keys A, D, and Left and Right Keyboard Arrow. Also left stick on gamepad.
 	var direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * SPEED
