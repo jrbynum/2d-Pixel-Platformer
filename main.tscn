@@ -24,15 +24,15 @@ texture = ExtResource("2_ko5fu")
 6:0/0 = 0
 6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:0/0/physics_layer_0/angular_velocity = 0.0
-6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.06309, -6.88651, -7.23966, 6.09191, 8, 5.3856, 8, -6.79822)
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.70993, -8, 8, -8, 8, 8, -6.70993, 8)
 7:0/0 = 0
 7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:0/0/physics_layer_0/angular_velocity = 0.0
-7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.9748, -8, 5.82705, 8, 5.3856, 8, -6.79822)
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:0/0 = 0
 8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:0/0/physics_layer_0/angular_velocity = 0.0
-8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.9748, -8, 5.82705, 7.15138, 5.12074, 6.9748, -7.15138)
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 6.9748, -8, 6.9748, 8, -8, 8)
 9:0/0 = 0
 9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:0/0/physics_layer_0/angular_velocity = 0.0
@@ -85,12 +85,15 @@ texture = ExtResource("2_ko5fu")
 6:1/0 = 0
 6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 7:1/0 = 0
 7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 8:1/0 = 0
 8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:1/0/physics_layer_0/angular_velocity = 0.0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 9:1/0 = 0
 9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:1/0/physics_layer_0/angular_velocity = 0.0
@@ -139,12 +142,15 @@ texture = ExtResource("2_ko5fu")
 6:2/0 = 0
 6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 7:2/0 = 0
 7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 8:2/0 = 0
 8:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:2/0/physics_layer_0/angular_velocity = 0.0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 13:2/0 = 0
 13:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:2/0/physics_layer_0/angular_velocity = 0.0
@@ -187,12 +193,15 @@ texture = ExtResource("2_ko5fu")
 6:4/0 = 0
 6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -6.88651, 8)
 7:4/0 = 0
 7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9748, -8, 8, -8, 8, 8, -8, 8, -8, -7.23967)
 8:4/0 = 0
 8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 6.9748, -8, 6.9748, 8, -8, 8)
 9:4/0 = 0
 9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:4/0/physics_layer_0/angular_velocity = 0.0
@@ -481,7 +490,7 @@ texture = ExtResource("2_ko5fu")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_22ti3")
 
-[node name="Node" type="Node"]
+[node name="main_level" type="Node"]
 
 [node name="Background" type="TextureRect" parent="."]
 texture_filter = 1
@@ -504,6 +513,8 @@ layer_0/tile_data = PackedInt32Array(917503, 983040, 1, 851967, 983040, 1, 78643
 
 [node name="Player" parent="." instance=ExtResource("3_3g167")]
 position = Vector2(106, 507)
+jump_height = 150.0
+jump_time_to_peak = 0.15
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_left = -20

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://27o415pe2cxg"
-path="res://.godot/imported/__explorer_light_skin_tone_crouch_003.png-ac3b781f688a40b58e5a78c8eacf1c92.ctex"
+uid="uid://4pvu4feoes0a"
+path="res://.godot/imported/__explorer_light_skin_tone_all.png-69d98f96ba72e24feca2c9527f193a11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Crouch/__explorer_light_skin_tone_crouch_003.png"
-dest_files=["res://.godot/imported/__explorer_light_skin_tone_crouch_003.png-ac3b781f688a40b58e5a78c8eacf1c92.ctex"]
+source_file="res://Assets/Player/Sprite Sheets/__explorer_light_skin_tone_all.png"
+dest_files=["res://.godot/imported/__explorer_light_skin_tone_all.png-69d98f96ba72e24feca2c9527f193a11.ctex"]
 
 [params]
 
